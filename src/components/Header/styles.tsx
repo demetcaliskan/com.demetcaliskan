@@ -7,6 +7,7 @@ export default styled.header`
   justify-content: center;
   align-items: center;
   height: 80px;
+  position: fixed;
   background-image: linear-gradient(
     180deg,
     #000,
@@ -21,7 +22,6 @@ export const HeaderContentWrapper = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  position: relative;
   @media (max-width: 1080px) {
     padding-left: 20px;
     padding-right: 20px;
@@ -61,14 +61,13 @@ export const HeaderLogo = styled.div`
   margin-right: auto;
   width: fit-content;
   font-family: 'Red Hat Mono', monospace;
-`
-
-export const HeaderLinkItemLogo = styled(Image)`
-  margin-right: 20px;
-`
-
-export const HeaderExternalLinkItem = styled.a`
-  display: flex;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+  :hover {
+    animation: buzz-out-on-hover 0.75s;
+  }
 `
 
 export const HeaderHamburgerMenuWrapper = styled.div`
