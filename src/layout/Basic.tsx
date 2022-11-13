@@ -21,13 +21,26 @@ export const GeneralWrapper = styled.div`
   position: relative;
 `
 
+export const MainContentWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 144px;
+  padding-bottom: 44px;
+  min-height: calc(100vh - 180px);
+  @media (max-width: 767px) {
+    min-height: calc(100vh - 240px);
+  }
+`
+
 const BasicLayout = ({ children }: { children: any }) => {
   return (
     <Theme>
       <GeneralWrapper>
         <GlobalStyle />
         <Header />
-        {children}
+        <MainContentWrapper>{children}</MainContentWrapper>
         <Footer />
       </GeneralWrapper>
     </Theme>

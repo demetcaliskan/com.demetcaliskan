@@ -5,12 +5,6 @@ export default styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding-bottom: 44px;
-  padding-top: 144px;
-  min-height: calc(100vh - 180px);
-  @media (max-width: 767px) {
-    min-height: calc(100vh - 240px);
-  }
 `
 
 export const HomePageDetailTitleWrapper = styled.div`
