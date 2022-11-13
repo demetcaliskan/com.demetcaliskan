@@ -2,7 +2,7 @@ import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import BasicLayout from '@/layout/Basic'
-import Header from '@/components/Header'
+import { Analytics } from '@vercel/analytics/react'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -20,6 +20,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
       <BasicLayout>
         <Component {...pageProps} />
+        <Analytics />
       </BasicLayout>
     </>
   )
