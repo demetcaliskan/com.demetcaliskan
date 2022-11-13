@@ -1,7 +1,9 @@
+import ContactPageDetail from '@/containers/ContactPageDetail'
+
 export default function Contact() {
   return (
     <>
-      <p>Coming soon...</p>
+      <ContactPageDetail />
     </>
   )
 }

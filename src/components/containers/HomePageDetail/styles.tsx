@@ -72,6 +72,7 @@ export const HomePageDetailImageContainer = styled.div`
   display: block;
   transition: border 0.5s ease;
   animation: fade-in 1s ease;
+  z-index: 0;
   :hover {
     border-width: 10px;
   }
