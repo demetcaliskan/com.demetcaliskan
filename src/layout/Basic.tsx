@@ -28,9 +28,9 @@ export const MainContentWrapper = styled.div`
   width: 100%;
   padding-top: 144px;
   padding-bottom: 44px;
-  min-height: calc(100vh - 180px);
+  min-height: calc(100vh - 100px);
   @media (max-width: 767px) {
-    min-height: calc(100vh - 240px);
+    min-height: calc(100vh - 160px);
   }
 `
 
