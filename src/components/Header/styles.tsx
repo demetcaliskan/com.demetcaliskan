@@ -14,6 +14,7 @@ export default styled.header`
     rgba(0, 0, 0, 0.8) 59%,
     transparent
   );
+  z-index: 10;
 `
 export const HeaderContentWrapper = styled.div`
   display: flex;

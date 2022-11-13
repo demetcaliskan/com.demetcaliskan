@@ -21,7 +21,7 @@ const HomePageDetail = () => {
         <HomePageDetailImageContainer>
           <Image
             src={profilePic}
-            style={{ borderRadius: '50%', padding: '12px' }}
+            style={{ borderRadius: '50%', padding: '12px', zIndex: '0' }}
             fill
             objectFit='cover'
             alt='demet-caliskan'
