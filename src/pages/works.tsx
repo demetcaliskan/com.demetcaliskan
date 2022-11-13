@@ -1,7 +1,9 @@
+import WorksPageDetail from '@/containers/WorksPageDetail'
+
 export default function Works() {
   return (
     <>
-      <p>Coming soon...</p>
+      <WorksPageDetail />
     </>
   )
 }

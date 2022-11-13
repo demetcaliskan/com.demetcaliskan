@@ -1,14 +1,10 @@
-import ContactPageDetailStyles, {
-  ContactPageDetailItemText,
-  ContactPageTitle,
-  TitleDivider,
-} from './styles'
+import PageContentHeader from '@/components/PageContentHeader'
+import ContactPageDetailStyles, { ContactPageDetailItemText } from './styles'
 
 const ContactPageDetail = () => {
   return (
     <ContactPageDetailStyles>
-      <ContactPageTitle>Get In Touch</ContactPageTitle>
-      <TitleDivider />
+      <PageContentHeader title={'Get In Touch'} />
       <ContactPageDetailItemText>
         You can use{' '}
         <a href='mailTo:demetcaliskann@icloud.com'>demetcaliskann@icloud.com</a>{' '}
