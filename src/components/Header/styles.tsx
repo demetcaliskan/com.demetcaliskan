@@ -36,15 +36,15 @@ export const HeaderMenuItemsWrapper = styled.div`
 `
 
 export const HeaderItem = styled.p`
-  font-family: 'Red Hat Mono', monospace;
   font-weight: light;
+  letter-spacing: 1.5px;
   font-size: 16px;
   line-height: 18px;
   margin-right: 18px;
   text-decoration: none;
   :hover {
-    text-decoration: underline 1.5px solid #fff;
-    text-underline-offset: 4px;
+    text-decoration: underline 0.5px solid #fff;
+    text-underline-offset: 8px;
   }
 `
 
