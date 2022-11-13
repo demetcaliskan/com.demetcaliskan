@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 import styled from 'styled-components'
+import Header from '@/components/Header'
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -19,10 +20,11 @@ export const GeneralWrapper = styled.div`
 
 const BasicLayout = ({ children }: { children: any }) => {
   return (
-    <>
+    <GeneralWrapper>
       <GlobalStyle />
+      <Header />
       {children}
-    </>
+    </GeneralWrapper>
   )
 }
 

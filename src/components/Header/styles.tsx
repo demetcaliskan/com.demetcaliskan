@@ -33,6 +33,9 @@ export const HeaderMenuItemsWrapper = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  @media (max-width: 821px) {
+    display: none;
+  }
 `
 
 export const HeaderItem = styled.p`
@@ -49,14 +52,14 @@ export const HeaderItem = styled.p`
 `
 
 export const HeaderLogo = styled.div`
-  font-size: 26px;
-  line-height: 32px;
+  font-size: 36px;
+  line-height: 36px;
   position: absolute;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  width: 100px;
+  width: fit-content;
   font-family: 'Red Hat Mono', monospace;
 `
 
@@ -66,4 +69,11 @@ export const HeaderLinkItemLogo = styled(Image)`
 
 export const HeaderExternalLinkItem = styled.a`
   display: flex;
+`
+
+export const HeaderHamburgerMenuWrapper = styled.div`
+  display: none;
+  @media (max-width: 821px) {
+    display: block;
+  }
 `

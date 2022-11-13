@@ -5,6 +5,7 @@ export default styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding-bottom: 44px;
 `
 
 export const HomePageDetailTitleWrapper = styled.div`
@@ -13,6 +14,7 @@ export const HomePageDetailTitleWrapper = styled.div`
   align-items: center;
   width: 100%;
   flex-direction: column;
+  margin-top: 44px;
 `
 
 export const HomePageDetailTitleName = styled.h1`
@@ -24,6 +26,10 @@ export const HomePageDetailTitleName = styled.h1`
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 2px;
   font-weight: 100;
+  @media (max-width: 767px) {
+    font-size: 32px;
+    line-height: 42px;
+  }
 `
 export const HomePageDetailTitleColored = styled.p`
   font-size: 42px;
@@ -34,6 +40,10 @@ export const HomePageDetailTitleColored = styled.p`
   margin-bottom: 8px;
   font-family: 'Italiana', serif;
   letter-spacing: 2px;
+  @media (max-width: 767px) {
+    font-size: 36px;
+    line-height: 42px;
+  }
 `
 export const HomePageDetailTitleCity = styled.p`
   font-size: 36px;
@@ -45,6 +55,10 @@ export const HomePageDetailTitleCity = styled.p`
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 2px;
   font-weight: 100;
+  @media (max-width: 767px) {
+    font-size: 32px;
+    line-height: 42px;
+  }
 `
 
 export const HomePageDetailImageContainer = styled.div`
@@ -55,4 +69,8 @@ export const HomePageDetailImageContainer = styled.div`
   padding: 8px;
   position: relative;
   display: block;
+  @media (max-width: 767px) {
+    width: 180px;
+    height: 180px;
+  }
 `

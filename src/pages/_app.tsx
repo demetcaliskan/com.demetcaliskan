@@ -19,7 +19,6 @@ export default function App({ Component, pageProps }: AppProps) {
         ></link>
       </Head>
       <BasicLayout>
-        <Header />
         <Component {...pageProps} />
       </BasicLayout>
     </>
