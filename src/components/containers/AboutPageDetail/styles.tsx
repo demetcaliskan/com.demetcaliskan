@@ -5,6 +5,7 @@ export default styled.div`
   flex-direction: column;
   width: 100%;
   max-width: 1080px;
+  max-width: 900px;
   justify-content: center;
   align-items: center;
   @media (max-width: 1080px) {
@@ -13,19 +14,11 @@ export default styled.div`
   }
 `
 
-export const ContactPageDetailItemText = styled.p`
+export const AboutPageText = styled.p`
   font-family: ${(p) => p.theme.fonts.primary};
-  font-size: 22px;
-  line-height: 26px;
   font-weight: 100;
-  max-width: 900px;
-  text-align: center;
-  a {
-    color: ${(p) => p.theme.colors.secondary};
-    text-shadow: none;
-    transition: 0.5s text-shadow ease;
-    :hover {
-      text-shadow: 0px 1px 12px rgba(244, 234, 241, 0.85);
-    }
-  }
+  font-size: 16px;
+  line-height: 22px;
+  align-self: flex-start;
+  text-align: justify;
 `

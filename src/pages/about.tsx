@@ -1,7 +1,9 @@
+import AboutPageDetail from '@/components/containers/AboutPageDetail'
+
 export default function About() {
   return (
     <>
-      <p>Coming soon...</p>
+      <AboutPageDetail />
     </>
   )
 }
