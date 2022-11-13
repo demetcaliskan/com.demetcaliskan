@@ -14,11 +14,10 @@ export default styled.div<MobileHeaderMenuStyleProps>`
   left: 0;
   overflow: hidden;
   width: 100%;
-  height: 100vh;
   background: black;
   justify-content: center;
   align-items: flex-start;
-  z-index: 10;
+  z-index: ${({ open }) => (open === 'open' ? '10' : '0')};
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 30px;
@@ -37,7 +36,7 @@ export const MobileHeaderMenuItem = styled.p`
   font-size: 34px;
   line-height: 38px;
   font-weight: 400;
-  font-family: 'Red Hat Mono';
+  font-family: ${(p) => p.theme.fonts.secondary};
   @media (max-width: 767px) {
     font-size: 28px;
     line-height: 32px;
