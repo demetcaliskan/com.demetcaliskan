@@ -36,7 +36,7 @@ const WorksPageDetail = () => {
         <WorksPageDetailProjectCardWrapper>
           <ProjectDisplayCard
             title='Aposto Web'
-            description='This project Next.js based web application which uses both server side and client side rendering. It also uses Redux. This project, which continues to be developed every day, was implemented in September 2022 together with the Aposto Frontend team.'
+            description='This project Next.js based web application. This project, which continues to be developed every day, was implemented in September 2022 together with the Aposto Frontend team.'
             imageRoute='/images/aposto-preview.png'
             isComplete={false}
             websitePath={'https://www.aposto.com'}
