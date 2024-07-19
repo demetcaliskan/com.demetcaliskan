@@ -6,6 +6,7 @@ import Document, {
   Main,
   NextScript,
 } from 'next/document'
+import Script from 'next/script'
 import { ServerStyleSheet } from 'styled-components'
 
 export default class MyDocument extends Document {
@@ -41,6 +42,12 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <Script
+            async
+            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_GOOGLE_ADS_CLIENT_ID}`}
+            strategy='lazyOnload'
+            crossOrigin='anonymous'
+          />
           <link
             href='https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300;400;500;600;700&display=swap'
             rel='stylesheet'
